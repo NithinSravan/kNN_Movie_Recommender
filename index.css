@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+* {
+    font-family: 'Sen';
+    box-sizing: border-box;
+    user-select: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+:root {
+      --card-color: rgb(66, 64, 82);
+      --font-color: #fff;
+      --muted-font:#a3a3a3;;
+      --grad-1:rgb(255, 87, 219);
+      --grad-2:rgb(205, 42, 255);
+      --grad-3:rgb(161, 47, 255);
+      --grad-4:rgb(87, 27, 226);
+      --bg-color: rgb(39, 36, 56);
+      --banner:rgb(39, 36, 56);
+  }
+  .shadow-dreamy{
+    box-shadow:0 1px 2px rgba(14, 13, 17, 0.07),
+    0 2px 4px  rgba(26, 9, 66, 0.07),0 4px 8px rgba(0,0,0,0.07),
+    0 8px 16px  rgba(26, 9, 66, 0.07),
+    0 16px 32px  rgba(26, 9, 66, 0.07),
+    0 32px 64px  rgba(26, 9, 66, 0.07)
+  }
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(38, 33, 56);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    padding: 3vh;
+    color: #fff;
+    background:linear-gradient(45deg,var(--grad-1),var(--grad-2),var(--grad-3),var(--grad-4));
+    margin: 0 auto;
+    width: 100%;
+    font-size: 2rem;
+}
+.container{
+  
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+#result,#sim{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    outline: none;
+    padding:5px;
+    color:#190238;
+    width: 15%;
+    height: 3vh;
+    transition: 0.3s;
+    text-align: center;
+    opacity: 1;
+    border:none;
+    font-size: 85%;
+    border-bottom:4px solid rgb(247, 141, 42);
+}
+.panel{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dropdown{
+    width: 25%;
+    margin-top:5px ;
+    font-size: 1.5rem;
+}
+button{
+    padding: 15px 10px;
+    border-radius: 36px;
+    margin-top:5px ;
+    margin-bottom: 5px;
+    outline: none;
+    color:#000;
+    width:25%;
+    transition: 0.3s;
+    text-align: center;
+    opacity: 1;
+    cursor: pointer;
+    border:none;
+    transform: scale(0.9);
+    font-size: 1rem;
+    background:rgb(162, 241, 43);
+  }

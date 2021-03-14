@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Movie Recommender System</title>
+</head>
+<body>
+  <header class="shadow-dreamy">Movie Recommender</header>
+  <div class="container">
+    <div class="panel">  
+      <div>Select User IDs to find the Similarity Score:</div>
+      <select class="dropdown" id="d1">
+    </select>
+    <select class="dropdown" id="d2">
+    </select>
+  
+    <button onclick="euclideanSimilarity()">Submit</button>
+    </div>
+    <div class="panel">  
+      
+        <label>Terminator 3: Rise of the Machines</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+    
+        <label>The Million Dollar Hotel</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+ 
+        <label>The 39 Steps</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+
+        <label>Monsoon Wedding</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+
+    
+        <label>Once Were Warriors</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+
+        <label>Trois couleurs : Rouge</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+
+
+
+        <label>Men in Black II</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+
+
+
+
+        <label>La passion de Jeanne d'Arc</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+
+  
+        <label>Silent Hill</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+   
+
+
+        <label>Sissi</label>
+        <input placeholder="rate out of 5" type="text">
+        <br>
+    
+
+  
+    <button onclick="predictRatings()">Submit</button>
+    </div>
+  </div>
+  <div id="result">
+    <div><h2>Predicted Ratings:</h2></div>
+  </div>
+  <div id="sim">
+    <div><h2>Top 5 Users with Similar Taste:</h2></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
